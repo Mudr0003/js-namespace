@@ -1,11 +1,12 @@
 var MUDR0003 = {
    
-    var toggleBool = false;
+    
     
     init: function () {
         console.log("script in MUDR0003 called");
         
         var div = document.createElement("div");
+        var toggleBool = false;
         
         div.className = "box";
         div.textContent = "MUDR0003";
