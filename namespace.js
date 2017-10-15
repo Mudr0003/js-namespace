@@ -1,8 +1,6 @@
 var MUDR0003 = {
    
     
-   
-    
     init: function () {
         console.log("script in MUDR0003 called");
         
@@ -22,15 +20,10 @@ var MUDR0003 = {
         }
         
         function doClick(ev) {          
-            if (this.style.backgoundColor != "lightblue")
-            {
-              this.style.backgroundColor = "lightblue";
-              this.style.borderColor = "lightpink";}
-            else
-            {
+            
               this.style.backgroundColor = "lightpink";
               this.style.borderColor = "lightblue";
-            }     
+           
         }
         
     }
