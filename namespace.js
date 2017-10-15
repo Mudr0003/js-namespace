@@ -9,7 +9,7 @@ var MUDR0003 = {
         var div = document.createElement("div");
         
         div.className = "box";
-        div.textContent = "MUDR00003";
+        div.textContent = "MUDR0003";
         
         document.getElementById("boxes").appendChild(div);
    
@@ -19,13 +19,18 @@ var MUDR0003 = {
         
         function doHighLight(ev) {
           this.classList.toggle("highlight");
-            this.style.backgroundColor = "none";
-            this.style.borderColor = "none";
         }
         
         function doClick(ev) {          
-            this.style.backgroundColor = "purple";
-            this.style.borderColor = "pink";
+            if (this.style.backgoundColor != "lightblue")
+            {
+              this.style.backgroundColor = "lightblue";
+              this.style.borderColor = "lightpink";}
+            else
+            {
+              this.style.backgroundColor = "lightpink";
+              this.style.borderColor = "lightblue";
+            }     
         }
         
     }
