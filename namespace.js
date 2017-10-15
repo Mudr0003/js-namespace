@@ -1,5 +1,6 @@
 var MUDR0003 = {
    
+    var toggleBool = false;
     
     init: function () {
         console.log("script in MUDR0003 called");
@@ -12,7 +13,7 @@ var MUDR0003 = {
         document.getElementById("boxes").appendChild(div);
    
         div.addEventListener("click", doClick);
-        div.addEventListener("mouseover", doHighlight);
+        div.addEventListener("mouseover", doHighLight);
         div.addEventListener("mouseout", doHighLight);
         
         function doHighLight(ev) {
@@ -20,9 +21,16 @@ var MUDR0003 = {
         }
         
         function doClick(ev) {          
-            
-              this.style.backgroundColor = "lightpink";
-              this.style.borderColor = "lightblue";
+              if (toggleBool == true)
+              {
+                  toggleBool = false;
+                  this.style.backgroundColor = "lightpink";
+                  this.style.borderColor = "lightblue";
+              } else {
+                  toggleBool = true;
+                  this.style.backgroundColor = "lightblue";
+                  this.style.borderColor = "lightpink"; 
+              }
            
         }
         
