@@ -19,11 +19,13 @@ var MUDR0003 = {
         
         function doHighLight(ev) {
           this.classList.toggle("highlight");
+            this.style.backgroundColor = "none";
+            this.style.borderColor = "none";
         }
         
         function doClick(ev) {          
-            this.style.backgroundColor = "blue";
-            this.style.borderColor = "red";
+            this.style.backgroundColor = "purple";
+            this.style.borderColor = "pink";
         }
         
     }
